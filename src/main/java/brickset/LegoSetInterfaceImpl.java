@@ -5,12 +5,30 @@ import java.util.Map;
 import java.util.Set;
 
 public class LegoSetInterfaceImpl implements LegoSetInterface {
+    public static void main(String[] args) {
+        var manager=new LegoSetInterfaceImpl();
+
+        //Query1
+        manager.printAllThemesByTag();
+
+        //Query2
+        System.out.println(manager.getSummaryStatisticsOfPiecesByTheme("Icons"));
+
+        //Query3
+        System.out.println(manager.getAvgPiecesOfIcons());
+
+        //Query4
+        System.out.println(manager.getSumOfPiecesByTheme());
+
+        //Query5
+        System.out.println(manager.getLegoSetByThemeThenBySubtheme());
+    }
+
     /**
      * Prints ascending order sorted themes where its tag has "Astronomy". Hint: There are tags that may be null
      */
     @Override
     public void printAllThemesByTag() {
-
     }
 
     /**
